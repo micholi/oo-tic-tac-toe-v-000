@@ -119,7 +119,7 @@ class TicTacToe
     #  end
     if won? && current_player == "X"
       return "X"
-    elsif won? && current_player == "O"
+    elsif won? 
       return "O"
   end
 end
