@@ -109,21 +109,15 @@ class TicTacToe
 
   # Declares winner if game has been won
   def winner
-    #if won?
-    #  new_win_combo = won?
-    #    if @board[new_win_combo[0]] == "X" && @board[new_win_combo[1]] == "X" && @board[new_win_combo[2]] == "X"
-    #      return "X"
-    #    elsif @board[new_win_combo[0]] == "O" && @board[new_win_combo[1]] == "O" && @board[new_win_combo[2]] == "O"
-    #      return "O"
-    #    end
-    #  end
-    if won?[0] == "X" && won?[1] == "X" && won?[2] == "X"
-      return "X"
-    elsif won? && current_player == "O"
-      return "O"
-  end
-end
-
+    if won?
+      new_win_combo = won?
+        if @board[new_win_combo[0]] == "X" && @board[new_win_combo[1]] == "X" && @board[new_win_combo[2]] == "X"
+          return "X"
+        elsif @board[new_win_combo[0]] == "O" && @board[new_win_combo[1]] == "O" && @board[new_win_combo[2]] == "O"
+          return "O"
+        end
+      end
+    
 # Plays game of Tic Tac Toe
   def play
     until over?
