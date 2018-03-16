@@ -122,6 +122,7 @@ class TicTacToe
     elsif won? = "O"
       return "O"
   end
+end
 
 # Plays game of Tic Tac Toe
   def play
