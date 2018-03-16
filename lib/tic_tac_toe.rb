@@ -117,6 +117,10 @@ class TicTacToe
     #      return "O"
     #    end
     #  end
+    if won? = "X"
+      return "X"
+    elsif won? = "O"
+      return "O"
   end
 
 # Plays game of Tic Tac Toe
