@@ -117,6 +117,7 @@ class TicTacToe
           return "O"
         end
       end
+    end
     
 # Plays game of Tic Tac Toe
   def play
